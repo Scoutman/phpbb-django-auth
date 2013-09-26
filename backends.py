@@ -72,7 +72,7 @@ class PhpbbBackend:
         logging.debug("get_user(): Returning user '%s'" % user)
         return user
 
-    def get_group_permissions(self, user_obj, request=None):
+    def get_group_permissions(self, user_obj):
         print('1')
         request = middleware.get_current_request()
         
